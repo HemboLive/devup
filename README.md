@@ -1,7 +1,7 @@
 # devup
 Script for easy downloading repos and choosing branches as shortcut "devup" in terminal.
 
-DEVSTACK – Repo klonen, Branch wählen, Docker Compose starten
+DEVSTACK – Clone Repo , choose Branch , Docker Compose up
 ==============================================================
 
 What you need:
@@ -9,7 +9,7 @@ What you need:
 - git
 - Docker Desktop (had to run)
 
-INSTALLATION
+Installation:
 1. Create folder:
    mkdir -p ~/devstack/repos ~/devstack/configs
 
@@ -60,7 +60,7 @@ First start of a new repo:
 - If a .env.example exists, it will be copyed to configs/<name>/.env
   the skript will abort after that for letting you time to modify the .env in config folder. after that you can run "devup" again to start.
 
-HINWEISE
+Some information:
 - Please only store your own data to configs/ and never dirextly to Repo-Folder
   (Repo folder will overwritten on every run!)
 - .env and docker-compose.local.yml are in .git/info/exclude
